@@ -1,0 +1,110 @@
+<!-- Navbar on the top is defined in main.handlebars -->
+<div id="main-container" class="container">
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12 row-title">
+          <img src="/assets/images/arrow-icon.png" width="30px">
+          Challenge
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 content-text" id="choose-problem">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+              Choose a Problem
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li id="problem-0"><a href="#">Find largest number in an array</a></li>
+              <li id="problem-1"><a href="#">Reverse a string</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 content-text" id="problem-title">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 content-text" id="problem-description">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 content-text" id="problem-example">
+        </div>
+      </div>
+      <div class="row code-area">
+        <div class="col-md-12 row-title">
+          <img src="/assets/images/arrow-icon.png" width="30px">
+          Your Code
+        </div>
+      </div>
+      <div class="row code-area">
+        <div class="col-md-12 content-text" id="ace-editor-container">
+          <!-- Mel: This is the new editor -->
+          <div id="editor">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="row" id="button-group">
+        <div class="col-md-12">
+          <input id="username" type="text" maxlength="16" value="Enter username"></input>
+          <button type="button" class="btn btn-success" id="starttimer">Start</button>
+          <button type="button" class="btn btn-primary" id="runcode">Verify Code</button>
+          <button type="button" class="btn btn-danger" id="refresh">Refresh</button>
+          <span id="clock-title">
+            <strong>Timer: </strong>
+          </span>
+          <span id="clock">
+            00:00
+          </span>
+        </div>
+      </div>
+
+      <div class="row" id="result-progressbar">
+        <div class="col-md-12">
+          <div class="alert alert-warning" id="info-during-coding">
+            <ul> Instructions:
+              <li>
+                - Click "Verify Code" when you finish.
+              </li>
+              <li>
+                - Timer will keep counting unless your code passes all test cases.
+              </li>
+              <li>
+                - You will be asked to enter your user name if your code passes all test cases. The name will be used in the ranking.
+              </li>
+              <li>
+                - If you want to give up, you can either select another problem, or click "Refresh" to exit the coding state.
+              </li>
+          </div>
+          <div class="alert alert-success" id="pass"></div>
+          <div class="alert alert-danger" id="fail"></div>
+          <div class="alert alert-danger" id="error"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-12" id="rank-title">
+          <img src="/assets/images/trophy-icon.png" width="50px">
+          Top 5 MVCs!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="rank-list">
+          <ol>
+            <li><img src="assets/images/star-icon.png" width="20px">Bill Gates</li>
+            <li><img src="assets/images/star-icon.png" width="20px">Steve Jobs</li>
+            <li><img src="assets/images/star-icon.png" width="20px">Mark Zuckerberg</li>
+            <li><img src="assets/images/star-icon.png" width="20px">Evan Spiegel</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
