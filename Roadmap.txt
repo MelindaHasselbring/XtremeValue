@@ -1,0 +1,20 @@
+V.1
+As a user I can login so that my actions apply to me.
+
+
+As a user there is a website with a nice design so that I can take pictures and rate my coupons.
+
+
+ 
+As a logged in user I can take pictures of my coupons and upload them so that can share them with the world
+
+
+
+As a logged in user I can rate coupons that I view. so others benefit from my experiences
+
+
+
+As a user I can search for and view coupons so that I save money, and rate the value.
+
+V.2 
+
