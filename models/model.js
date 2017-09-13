@@ -11,7 +11,7 @@
   var sequelize;
   if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize("b0d3jc6zlw954h1y", "hlkowtni85aihv45", "oxuw49geqe12bw4t", {
-      host: "op2hpcwcbxb1t4z9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      host: "",
       dialect: "mysql",
       pool: {
         max: 5,
@@ -21,7 +21,7 @@
     });
   }
   else {
-    sequelize = new Sequelize("mvc_db", "root", "root", {
+    sequelize = new Sequelize("", "root", "root", {
       host: "localhost",
       dialect: "mysql",
       pool: {
