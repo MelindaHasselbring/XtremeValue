@@ -1,9 +1,9 @@
-import { render } from 'react-dom'
-import { history } from './routing'
+import { render } from 'react-dom';
+import { history } from './routing';
 import registerServiceWorker from './registerServiceWorker';
-import 'semantic-ui-css/semantic.css'
-import './styles/index.scss'
-import { configureRootComponent } from './common'
+import 'semantic-ui-css/semantic.css';
+import './styles/index.scss';
+import { configureRootComponent } from './common';
 
 if (process.env.NODE_ENV === 'production') {
   registerServiceWorker();
@@ -14,10 +14,10 @@ if (process.env.NODE_ENV === 'production') {
  */
 const preloadedState = {
   user: {
-    isLoggedIn: false,
+    isLoggedIn: false
   }
-}
+};
 
-const RootComponent = configureRootComponent(preloadedState, history)
+const RootComponent = configureRootComponent(preloadedState, history);
 
-render(RootComponent, document.getElementById('root'))
+render(RootComponent, document.getElementById('root'));
