@@ -12,7 +12,7 @@ import {
 } from 'semantic-ui-react';
 
 import { connect } from '../../utils/connect';
-import './home.css';
+import './home.scss';
 
 class Home extends Component {
   static propTypes = {
@@ -34,7 +34,7 @@ class Home extends Component {
               <Grid.Column width={2}>
                 <button id="carousel">
                   <Image
-                    src="./images/kols30.png"
+                    src="/assets/images/kols30.png"
                     alt="kols30"
                     class="w3-card-4"
                     onClick={() => this.navigateTo('/')}
@@ -44,7 +44,7 @@ class Home extends Component {
               <Grid.Column width={2}>
                 <button id="carousel">
                   <Image
-                    src="images/michaels2.png"
+                    src="/assets/images/michaels2.png"
                     alt="michaels2"
                     class="btn btn-default"
                     onClick={() => this.navigateTo('/')}
@@ -54,7 +54,7 @@ class Home extends Component {
               <Grid.Column width={2}>
                 <button id="carousel">
                   <Image
-                    src="images/bbby20.png"
+                    src="/assets/images/bbby20.png"
                     alt="bbby20"
                     onClick={() => this.navigateTo('/')}
                   />
@@ -63,7 +63,7 @@ class Home extends Component {
               <Grid.Column width={2}>
                 <button id="carousel">
                   <Image
-                    src="images/Joann60.png"
+                    src="/assets/images/Joann60.png"
                     alt="Joann60"
                     onClick={() => this.navigateTo('/')}
                   />
@@ -72,7 +72,7 @@ class Home extends Component {
               <Grid.Column width={2}>
                 <button id="carousel">
                   <Image
-                    src="images/payless.png"
+                    src="/assets/images/payless.png"
                     alt="payless"
                     onClick={() => this.navigateTo('/')}
                   />
@@ -81,7 +81,7 @@ class Home extends Component {
               <Grid.Column width={2}>
                 <button id="carousel">
                   <Image
-                    src="images/pza.png"
+                    src="/assets/images/pza.png"
                     alt="pza"
                     onClick={() => this.navigateTo('/')}
                   />

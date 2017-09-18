@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Menu, Container, Button } from 'semantic-ui-react';
+import { Menu, Container, Button, Input } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 import { observer } from 'mobx-react';
 import './header.css';
 import image from './images/x_480.png';
+
 class Header extends Component {
   static propTypes = {
     title: PropTypes.string,
@@ -41,12 +42,14 @@ class Header extends Component {
               onClick={() => this.navigateTo('/')}
             />
           </button>
-
           <Menu.Item as="a">Submit a Coupon</Menu.Item>
           <Menu.Item as="a">My Wallet</Menu.Item>
           <Menu.Item as="a">Best Rated Coupons</Menu.Item>
           <Menu.Menu position="right">
-            <Menu.Item className="item">
+            <Menu.Item>
+              <Input icon='search' placeholder='Search...' />
+            </Menu.Item>
+            <Menu.Item>
               <Button primary as="a" onClick={() => this.navigateTo('/auth')}>
                 Log In/Sign Up
               </Button>
