@@ -1,0 +1,9 @@
+#carousel {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px !important;
+  border-color: green;
+  background-color: white;
+  padding: 13px;
+  margin: 25px;
+}

@@ -1,0 +1,38 @@
+#logo {
+  max-width: 100%;
+  border-radius: 45px !important;
+  border-color: green;
+  background-color: white;
+  padding: 13px;
+  margin: 15px 15px;
+
+   {
+    /*background: none;
+  border: none;*/
+  }
+}
+
+.ui.large.menu {
+  background: #11b48c; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    -90deg,
+    #11b48c,
+    #24b7e2
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    -90deg,
+    #11b48c,
+    #24b7e2
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    -90deg,
+    #11b48c,
+    #24b7e2
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #11b48c, #24b7e2); /* Standard syntax */
+}
+
+html,
+body {
+  background-color: white !important;
+}
