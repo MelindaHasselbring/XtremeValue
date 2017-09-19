@@ -29,19 +29,19 @@ class Home extends Component {
     return (
       <div>
         <Segment style={{ padding: '4em 0em' }} vertical>
-          <Grid container stackable verticalAlign="middle">
+          <Grid columns={6} divided container stackable verticalAlign="middle">
             <Grid.Row>
-              <Grid.Column width={2}>
+              <Grid.Column width={2.5}>
                 <button id="carousel">
                   <Image
                     src="/assets/images/kols30.png"
                     alt="kols30"
-                    class="w3-card-4"
+                    class="ui button"
                     onClick={() => this.navigateTo('/')}
                   />
                 </button>
               </Grid.Column>
-              <Grid.Column width={2}>
+              <Grid.Column width={3}>
                 <button id="carousel">
                   <Image
                     src="/assets/images/michaels2.png"
@@ -51,25 +51,17 @@ class Home extends Component {
                   />
                 </button>
               </Grid.Column>
-              <Grid.Column width={2}>
-                <button id="carousel">
-                  <Image
-                    src="/assets/images/bbby20.png"
-                    alt="bbby20"
-                    onClick={() => this.navigateTo('/')}
-                  />
-                </button>
-              </Grid.Column>
-              <Grid.Column width={2}>
+              <Grid.Column width={3}>
                 <button id="carousel">
                   <Image
                     src="/assets/images/Joann60.png"
                     alt="Joann60"
+                    max-height="75px"
                     onClick={() => this.navigateTo('/')}
                   />
                 </button>
               </Grid.Column>
-              <Grid.Column width={2}>
+              <Grid.Column width={3}>
                 <button id="carousel">
                   <Image
                     src="/assets/images/payless.png"
@@ -78,7 +70,7 @@ class Home extends Component {
                   />
                 </button>
               </Grid.Column>
-              <Grid.Column width={2}>
+              <Grid.Column width={3}>
                 <button id="carousel">
                   <Image
                     src="/assets/images/pza.png"
@@ -90,6 +82,67 @@ class Home extends Component {
             </Grid.Row>
             <Grid.Row>
               <Grid.Column textAlign="center" />
+            </Grid.Row>
+          </Grid>
+        </Segment>
+
+        <Segment>
+          <Grid columns={3} divided>
+            <Grid.Row stretched>
+              <Grid.Column>
+                <Segment>
+                  Top Categories
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="clothing" />
+                    <label> Clothing</label>
+                  </div>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="food" />
+                    <label> Food</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="beauty" />
+                    <label> Beauty</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="Travel" />
+                    <label> Travel</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="shoes" />
+                    <label> Shoes</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="electronics" />
+                    <label> Electronics</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="home & garden" />
+                    <label> Home & Garden</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="accessories" />
+                    <label> Accessories</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="sporting goods" />
+                    <label> Sporting Goods</label>
+                  </div>
+                  <div class="ui_checkbox">
+                    <input type="checkbox" name="furniture" />
+                    <label> Furniture</label>
+                  </div>
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment>1</Segment>
+                <Segment>2</Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment>1</Segment>
+                <Segment>2</Segment>
+                <Segment>3</Segment>
+              </Grid.Column>
             </Grid.Row>
           </Grid>
         </Segment>

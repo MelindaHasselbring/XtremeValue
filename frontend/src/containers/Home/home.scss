@@ -1,9 +1,11 @@
 #carousel {
   width: 100px;
-  height: 100px;
-  border-radius: 3px !important;
-  border-color: green;
+  max-height: 75px;
   background-color: white;
-  padding: 13px;
   margin: 25px;
+  padding: 0 !important;
+}
+
+#ui_checkbox {
+  font-size: 14px !important;
 }
