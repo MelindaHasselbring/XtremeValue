@@ -136,27 +136,13 @@ class Home extends Component {
               </Grid.Column>
               <Grid.Column>
                 <Segment>1</Segment>
-                <Segment>2</Segment>
               </Grid.Column>
               <Grid.Column>
                 <Segment>1</Segment>
                 <Segment>2</Segment>
                 <Segment>3</Segment>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Segment>
-
-        <Segment style={{ padding: '0em' }} vertical>
-          <Grid celled="internally" columns="equal" stackable>
-            <Grid.Row textAlign="center">
-              <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                <Header as="h3" style={{ fontSize: '2em' }}>
-                  "How do I devide this row into 3 columns?"
-                </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  Doesn't look like react-bootstrap-columns is the solution.
-                </p>
+                <Segment>4</Segment>
+                <Segment>5</Segment>
               </Grid.Column>
             </Grid.Row>
           </Grid>
