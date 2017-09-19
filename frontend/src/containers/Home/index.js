@@ -18,8 +18,11 @@ class Home extends Component {
   static propTypes = {
     title: PropTypes.string,
     location: PropTypes.object,
-    history: PropTypes.object
+    history: PropTypes.object,
+    isLoggedIn: PropTypes.bool,
+    // couponStore: PropTypes.object
   };
+
   navigateTo = to => {
     const { history } = this.props;
     history.replace(`${to}`);
@@ -85,6 +88,8 @@ class Home extends Component {
             </Grid.Row>
           </Grid>
         </Segment>
+
+        {this.props.isLoggedIn && <h1>Hey you are logged in!!!!</h1>}
 
         <Segment>
           <Grid columns={3} divided>
@@ -263,14 +268,10 @@ class Home extends Component {
   }
 }
 
-Home.propTypes = {
-  history: PropTypes.object.isRequired,
-  isLoggedIn: PropTypes.bool.isRequired
-};
-
 function selector({ store }) {
   return {
-    isLoggedIn: store.user.isLoggedIn
+    isLoggedIn: store.user.isLoggedIn,
+    // couponStore: store.couponStore
   };
 }
 

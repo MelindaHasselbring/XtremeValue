@@ -18,6 +18,9 @@ const preloadedState = {
   }
 };
 
-const RootComponent = configureRootComponent(preloadedState, history);
+const RootComponent = configureRootComponent({
+  preloadedState,
+  history
+});
 
 render(RootComponent, document.getElementById('root'));
