@@ -1,3 +1,5 @@
+Project3: 
+
 # XtremeValue
 Project3: An app where subscribers can search for coupon and save it to their online XtremeValue Wallet
  
@@ -17,6 +19,8 @@ Project3: An app where subscribers can search for coupon and save it to their on
     * Must allow for or involve the authentication of users in some way
 
     * Must have a polished frontend / UI 
+
+
 
     * Must have folder structure that meets MVC Paradigm
 
