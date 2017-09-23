@@ -2,10 +2,11 @@ import { observable } from 'mobx'
 
 export class Store {
 
-  user = observable({ isLoggedIn: false })
+
+  user = observable({ isLoggedIn: true })
 
   couponStore = observable({
-    search: '',
+
     availableCoupons: []
   })
 
@@ -19,10 +20,10 @@ export class Store {
     }
   }
 
-
-
 }
 
 export default function createStore(initialState = {}) {
+  console.log(initialState);
+
   return new Store(initialState)
 }
