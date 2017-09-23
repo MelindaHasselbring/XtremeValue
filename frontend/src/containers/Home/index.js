@@ -19,7 +19,9 @@ class Home extends Component {
     title: PropTypes.string,
     location: PropTypes.object,
     history: PropTypes.object,
+
     isLoggedIn: PropTypes.bool
+
     // couponStore: PropTypes.object
   };
 
@@ -237,7 +239,9 @@ class Home extends Component {
 function selector({ store }) {
   return {
     isLoggedIn: store.user.isLoggedIn,
+
     couponStore: store.couponStore.availableCoupons
+
   };
 }
 

@@ -19,10 +19,5 @@ export const configureRootComponent = ({
   const store = createStore(preloadedState)
   window.store = store // temporary to play around
   console.log(store);
-  const propsRoot = {
-    routes: Routing,
-    history,
-    store
-  }
-  return <Root {...propsRoot} />
-}
+
+
