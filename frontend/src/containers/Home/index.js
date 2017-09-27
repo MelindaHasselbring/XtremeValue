@@ -98,7 +98,7 @@ class Home extends Component {
               <Grid.Column>
                 <Segment>
                   Top Categories
-                  <div class="ui checkbox">
+                  <div class="checkbox">
                     <input type="checkbox" name="clothing" />
                     <label> All</label>
                   </div>
