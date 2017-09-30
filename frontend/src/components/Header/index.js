@@ -39,7 +39,7 @@ class Header extends Component {
               src={image}
               alt="xvlogo"
               class="w3-circle"
-              onClick={() => this.navigateTo('/')}
+               
             />
           </button>
           <Menu.Item as="a">Submit a Coupon</Menu.Item>
