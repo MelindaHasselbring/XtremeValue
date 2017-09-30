@@ -5,12 +5,8 @@
   background-color: white;
   padding: 13px;
   margin: 15px 15px;
-
-   {
-    /*background: none;
-  border: none;*/
   }
-}
+
 
 .ui.large.menu {
   background: #11b48c; /* For browsers that do not support gradients */
@@ -35,4 +31,14 @@
 html,
 body {
   background-color: white !important;
+}
+
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #23b38f;
+}
+
+#myWallet {
+  
 }

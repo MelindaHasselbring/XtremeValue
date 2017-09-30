@@ -15,7 +15,7 @@ const Footer = () => (
             <Header as="h4" inverted>Legal</Header>
           </Grid.Column>
           <Grid.Column width={4}>
-            <Header as="h4" inverted>Resources</Header>
+            <Header as="h4" inverted>Services</Header>
           </Grid.Column>
           <Grid.Column width={4}>
             <Header as="h4" inverted>About Us</Header>
